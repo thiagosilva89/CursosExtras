@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*
+EM HTML É ID = EM CSS É #
+EM HTML É CLASS = EM CSS É .
+*/
+
+body{
+    background-color: #cee7e7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color:#1B3946;
+}
+
+h2{
+    color: #1B3946;   
+}
+
+h1#principal {
+    text-align: center;
+    background-color:#1B3946;
+    color: #D3D1C4;
+}
+
+
+.basico{
+    color: #1B3946;
+    font-weight: bold;
+}
+
+.intermediario{
+    color: #2b5a6e;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.avancado { 
+    color: #57abcf;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.destaque{
+    background-color: rgb(217, 217, 105);
+}
