@@ -1,0 +1,50 @@
+subindo no servidor 
+
+
+requierements
+
+Criar um arquivo na mesma estrutura como Procfile.txt
+
+Dentro do arquivo deve conter 
+
+// nome do app exemplo meu_site.py (o .py não vai no arquivo)
+web: gunicorn meu_site:app 
+
+após criar arquivo no terminal executar o comando 
+pip install gunicorn
+
+
+Agora passo é criar o arquivo txt
+requirements.txt
+
+No terminal executar o comando para criar o requirements.txt
+pip freeze > requirements.txt
+
+No terminal login no heroku
+	heroku login
+
+Iniciar o git
+git init
+
+No primeiro acesso necessário configuração do GIT
+git config --global user.email "thiago.carvalhosilva@hotmail.com"
+git config --global user.name "thiagosilva89"
+
+
+
+Iniciar o git
+git init
+
+
+depois seguir o comando abaixo após a letra a é seu nome de servidor no herouku
+heroku git:remote -a fatecdesafio1
+
+
+Deploy your application
+Commit your code to the repository and deploy it to Heroku using Git.
+
+$ git add .
+
+nesse passo dentro de aspas são os comentarios do commit
+$ git commit -am "make it better"
+$ git push heroku master

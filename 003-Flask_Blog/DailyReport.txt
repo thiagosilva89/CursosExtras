@@ -1,0 +1,23 @@
+EM TESTES
+def index(): #FUNÇÃO INDEX
+    if request.method == 'POST':
+        getsala = (request.form.get('sala'))
+        getcomputador = (request.form.get('computador'))
+        getdescricao = (request.form.get('descricao'))
+        try:
+            cursor = conn.cursor()
+            cursor.execute("""
+            INSERT INTO tasks(room, computer, description )
+            VALUES (?,?,?)""", (getsala, getcomputador, getdescricao)) #INSTRUÇÃO INPUT BD.
+            conn.commit() #COMITANDO OS DADOS
+            return 'done'
+        except:
+            return render_template("index.html") #RECARREGA PÁGINA
+			
+			
+
+FUNCIONANDO
+
+def index(): #FUNÇÃO INDEX
+	
+	return render_template("index.html") #RECARREGA PÁGINA
