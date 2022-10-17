@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        .p100 {
+            height: 800px;
+            width: auto;
+            background-color: lightgray;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 50px;
+            border: 2px solid gray;
+        }
+
+        .cabecalho {
+            height: 30px;
+            width: auto;
+            background-color: lightcyan;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 50px;
+            border: 2px solid gray;
+        }
+
+        .se102, .se106, .se110 {
+            display: inline-block;
+            height: 70px;
+            width: 100px;
+            background-color: lightcoral;
+            border-radius: 2px;
+            margin: 2px;
+            padding: 2px;
+            border: 2px solid gray;
+            
+        }
+        .se102:hover{
+            background-color: rgb(250, 22, 22);
+        }
+
+        h1 {
+            height: 300px;
+            width: 300px;
+            background-color: lightcoral;
+
+
+            /*TODA LINHA PODE SER SIMPLIFICADA EX: BORDER
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;*/
+            border: 10px solid lightslategray;
+
+
+            /*TODA LINHA DE PADIN TBM PODE SER SIMPLIFICADA PADDING
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            SEQUENCIA DEVE SER OBEDECIDA TOP RIGHT BOTTOM LEFT
+            EM CASOS DE TODOS OS VALORES IGUAIS PODE INFORMAR SOMENTE UM VALOR
+            EM CASOS DE DUAS MEDIDAS TOP E BOTTOM UM VALOR E LEFT RIGHT OS LADOS
+            */
+            padding: 10px 10px 10px 10px;
+
+
+            
+            /*TODA LINHA DE PADIN TBM PODE SER SIMPLIFICADA PADDING
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            SEQUENCIA DEVE SER OBEDECIDA TOP RIGHT BOTTOM LEFT
+            EM CASOS DE TODOS OS VALORES IGUAIS PODE INFORMAR SOMENTE UM VALOR
+            EM CASOS DE DUAS MEDIDAS TOP E BOTTOM UM VALOR E LEFT RIGHT OS LADOS
+            
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;*/
+            margin: 20px;
+
+
+        }
+
+    a {
+        border-width: 5px;
+        border-style: solid;
+        border-color: lightsalmon;
+    }
+    </style>
+</head>
+<body>
+    <div id="cabecalho" class="cabecalho">Cabeçalho</div>
+
+
+
+    <div id="p100" class="p100">P100
+        <span id="se102" class="se102">SE102</span>
+        <span id="se106" class="se106">SE106</span>
+        <span id="se110" class="se110">SE110</span>
+    </div>
+
+</body>
+</html>

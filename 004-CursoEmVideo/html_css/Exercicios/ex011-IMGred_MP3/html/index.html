@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o seu navegador "PICTURE"</p>
+
+    <picture>
+        <!-- AJUSTE AUTOMÁTICO DE IMAGEM -->
+        <source media="(max-width: 750px)" srcset="../img/foto_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="../img/foto_m.png" type="image/png">
+        <img src="../img/foto_g.png" alt="Imagem Flexivel">
+    </picture>
+    
+    <h1>Carregamento Áudio Medias</h1>
+    <p>Vamos aprender reproduzir audio</p>
+    
+    <!-- EXEMPLO DE CHAMADA MEDIA SIMPLES-->
+   <!--  <audio src="../media/ReadAllOver-NathanMoore.mp3" autoplay controls></audio> -->
+
+
+    <audio preload="metadata" controls>
+<!-- EXEMPLO PARA CHAMADA AUDIO MP3 -->
+        <source src="../media/ReadAllOver-NathanMoore.mp3" type="audio/mpeg">
+
+<!-- EXEMPLO PARA CHAMADA AUDIO wave -->
+        <source src="../media/ReadAllOver-NathanMoore.mp3" type="audio/occ">
+
+<!-- EXEMPLO PARA CHAMADA AUDIO wave -->
+        <source src="../media/ReadAllOver-NathanMoore.mp3" type="audio/wave">
+
+<!-- QUANDO NÃO É COMPATIVEL BAIXAR AUDIO -->
+        <p>Navegador incopátivel, <a href="../media/ReadAllOver-NathanMoore.mp3">CLIQUE PARA BAIXAR AUDIO</a></p>
+    </audio>
+
+    
+</body>
+</html>

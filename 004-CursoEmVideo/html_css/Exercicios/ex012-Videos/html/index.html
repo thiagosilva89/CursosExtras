@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu proprio servidor</p>
+    
+    <p>MP3
+    <video src="../media/Cerveja_rev00.m4v" width="200" controls></video>
+    </p>
+
+    <p>MKV
+    <video src="../media/Cerveja.mp4" width="200" controls></video>
+    </p>
+
+
+    <H1>EXEMPLO INSERINDO TAG VIDEO COM SOURCE</H1>
+    <video width="200" controls poster="../img/CSS-200.png">
+        <source src="../media/Cerveja.mp4" type="video/mp4">
+        <source src="../media/Cerveja_rev00.m4v" type="video/mp4">
+        <p>Seu navegador não possui compatibilidade. Faça <a href="../media/Cerveja.mp4">download do video</a></p>
+
+    </video>
+
+
+
+    <h1>INSERINDO VIDEOS DO YOUTUBE</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
